@@ -1,9 +1,11 @@
 <h1 align="center"><br>✨🌱<br><br> React Collection Builder</h1>
 <div align="center">
   <p align="center">A <b>beautiful</b> drag and drop editor for building out collections with React</p>
+   <a href="https://optum.github.io/collection-builder">
+    <img src="https://raw.githubusercontent.com/storybookjs/brand/master/badge/badge-storybook.svg" alt="storybook badge" />
   </a>
 
-  ![demo](/.github/demo-720.gif)
+  ![demo](https://raw.githubusercontent.com/Optum/collection-builder/main/.github/demo-720.gif)
 </div>
 
 ### Installation
