@@ -7,7 +7,7 @@
 </div>
 
 ### Installation
-[See installation steps here](https://github.com/Optum/collection-builder/packages/731329)
+[See installation steps here](https://github.com/Optum/collection-builder/packages/760670)
 
 ### Usage
 Play with a demo and see documentation [on the Storybook](https://optum.github.io/collection-builder) page!
