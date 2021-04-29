@@ -27,7 +27,7 @@ npm i
 Installs necessary dependencies.
 
 ```bash
-yarn storybook
+npm run storybook
 ```
 
 Starts up a [Storybook](https://storybook.js.org/) instance on port 6006.
