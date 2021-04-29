@@ -4,14 +4,13 @@
   </a>
 
   ![demo](/.github/demo-720.gif)
-  [Play with a demo on storybook!]()
 </div>
 
 ### Installation
 [See installation steps here](https://github.com/Optum/collection-builder/packages/731329)
 
 ### Usage
-[Link to Sorybook here]
+Play with a demo and see documentation [on the Storybook](https://optum.github.io/collection-builder) page!
 
 ### Contributing
 We welcome any and all kinds of contributions to this project!

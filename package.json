@@ -4,13 +4,13 @@
     "./dist"
   ],
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com/@optum"
+    "registry": "https://npm.pkg.github.com/@optum"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/optum/collection-builder.git"
   },
-  "version": "0.1",
+  "version": "v0.1.0",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "source": "src/index.js",
