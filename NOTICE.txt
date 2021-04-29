@@ -1,0 +1,10 @@
+collection-builder
+Copyright 2021 Optum
+
+Project Description:
+====================
+A beautiful drag and drop editor for building out collections with React
+
+Author(s):
+- Tiffany Nguyen ([@tiffkwin](https://github.com/tiffkwin))
+- Eric Carboni ([@eric-hc](https://github.com/eric-hc))

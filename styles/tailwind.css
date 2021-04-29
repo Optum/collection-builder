@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+
+section.oe-inactive-tab:after{
+  content: "";
+  position: absolute;
+
+  background-color: white;
+  right: -1px;
+  height: 20px;
+  width: 1px;
+
+}
+
+.oe-inactive-tab:hover:before {
+  content: "";
+  position: absolute;
+  
+  background-color: transparent;
+  bottom: 0px;
+  left: -20px;
+  height: 10px;
+  width: 20px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 10px 0 0 0 var(--color-primary);
+}
+
+.oe-inactive-tab:hover:after {
+  content: "";
+  position: absolute;
+  
+  background-color: transparent;
+  bottom: 0px;
+  right: -20px;
+  height: 10px;
+  width: 20px;
+  border-bottom-left-radius: 10px;
+  box-shadow: -10px 0 0 0 var(--color-primary);
+}
+
+.oe-inactive-tab:focus-within:before {
+  content: "";
+  position: absolute;
+  
+  background-color: transparent;
+  bottom: 0px;
+  left: -20px;
+  height: 10px;
+  width: 20px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 10px 0 0 0 var(--color-primary);
+}
+
+.oe-inactive-tab:focus-within:after {
+  content: "";
+  position: absolute;
+  
+  background-color: transparent;
+  bottom: 0px;
+  right: -20px;
+  height: 10px;
+  width: 20px;
+  border-bottom-left-radius: 10px;
+  box-shadow: -10px 0 0 0 var(--color-primary);
+}
+
+.oe-active-tab::before {
+  content: "";
+  position: absolute;
+  
+  background-color: transparent;
+  bottom: 0px;
+  left: -20px;
+  height: 10px;
+  width: 20px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 10px 0 0 0 white;
+}
+
+.oe-active-tab::after {
+  content: "";
+  position: absolute;
+  
+  background-color: transparent;
+  bottom: 0px;
+  right: -20px;
+  height: 10px;
+  width: 20px;
+  border-bottom-left-radius: 10px;
+  box-shadow: -10px 0 0 0 white;
+}
+
+@tailwind utilities;
+
+@layer utilities {
+  @variants hover, focus {
+    .oe-filter-bright {
+      filter: brightness(118%);
+    }
+  }
+  @variants hover, focus {
+    .oe-filter-dark {
+      filter: brightness(82%);
+    }
+  }
+}

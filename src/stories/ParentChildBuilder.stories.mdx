@@ -1,0 +1,130 @@
+import { BuilderProvider, BuilderEditor } from "../index";
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+import { displayTypes, palettes, textColors, icons } from "../utils/options";
+
+<Meta
+  title="Collection Builder"
+  component={BuilderProvider}
+  argTypes={{
+    displayType: {
+      name: "Display Type",
+      description: "Display layout option for the CollectionBuilder",
+      control: {
+        type: "inline-radio",
+        options: displayTypes,
+      },
+    },
+    palette: { control: "color" },
+    textColor: {
+      control: {
+        type: "inline-radio",
+        options: textColors,
+      },
+    },
+    icon: {
+      control: {
+        type: "select",
+        options: icons,
+      },
+    },
+  }}
+/>
+
+# Collection Builder
+
+A beautiful drag and drop editor for building out collections with React
+
+## Install
+
+`yarn add @otte/collection-builder`
+
+## Usage
+
+To set up using defaults, import `BuilderProvider` from `@otte/collection-builder`. Wrap your custom component with `BuilderProvider`.
+
+```jsx
+import { BuilderProvider } from "@otte/collection-builder";
+import { YourComponent } from "./your-component";
+
+function App() {
+  return (
+    <BuilderProvider>
+      <YourComponent />
+    </BuilderProvider>
+  );
+}
+
+export default App;
+```
+
+Inside your custom component, import `BuilderEditor` and `useBuilderState` from `@otte/collection-builder`. You can then place the `BuilderEditor` inside your custom component and access its state with `useBuilderState`.
+
+```jsx
+import { BuilderEditor, useBuilderState } from "@otte/collection-builder";
+
+function YourComponent() {
+  const { sections, childItems } = useBuilderState();
+  console.log(sections, childItems);
+
+  return (
+    <StyledComponent>
+      <BuilderEditor />
+    </StyledComponent>
+  );
+}
+
+export default YourComponent;
+```
+
+### Options
+
+To set up with options, pass certain `options` into the `BuilderProvider` as props.
+
+| Name          | Type                  | Default                    | Description                                                                                                                                                                                    |
+| :------------ | :-------------------- | :------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `sections`    | [Section Object]      | `[{title: 'New Section'}]` | An array of Section objects. Adjust this to set the default sections that appear on the navigation builder.                                                                                    |
+| `childItems`  | [Child Objects Array] | `[[]]`                     | An array of arrays of child objects. The amount of inner arrays must correspond to the amount of sections. Adjust this to set the default child objects that appear on the navigation builder. |
+| `palette`     | String                | `#009688`                  | Sets the default color of the navigation builder. Any valid HTML color names, hex values, and RGB values can be passed in.                                                                     |
+| `textColor`   | String                | `light`                    | Determines if the text color is light or dark. Options are `light` and `dark`.                                                                                                                 |
+| `displayType` | String                | `top`                      | Determines where the section bar is located with respect to the container that holds the child objects. Options are `top` and `left`.                                                          |
+| `icon`        | String                | `star`                     | Determine the icon used for each child item. Options are `star`, `file`, `check`, `heart`, `smiley`, `person`, `leaf`, and `lightbulb`.                                                        |
+
+```jsx
+import { BuilderProvider } from "@otte/collection-builder";
+import { YourComponent } from "./your-component";
+
+function App() {
+  const options = {
+    displayType: "left",
+    palette: "teal",
+  };
+
+  return (
+    <BuilderProvider {...options}>
+      <YourComponent />
+    </BuilderProvider>
+  );
+}
+
+export default App;
+```
+
+export const Template = (args) => (
+  <BuilderProvider {...args}>
+    <BuilderEditor />
+  </BuilderProvider>
+);
+
+<Canvas>
+  <Story
+    name="Default"
+    args={{
+      displayType: "left",
+      palette: "#009688",
+      textColor: "light",
+      icon: "leaf",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>

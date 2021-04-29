@@ -1,0 +1,13 @@
+The following open source projects are referenced by Collection Builder:
+
+Babel (MIT License) - https://babeljs.io/
+https://github.com/babel/babel/blob/main/LICENSE
+
+Rollup (MIT License) - https://rollupjs.org/guide/en/
+https://github.com/rollup/rollup/blob/master/LICENSE.md
+
+Storybook (MIT License) - https://storybook.js.org/
+https://github.com/storybookjs/storybook/blob/next/LICENSE
+
+TailwindCSS (MIT License) - https://tailwindcss.com/
+https://github.com/tailwindlabs/tailwindcss/blob/master/LICENSE
