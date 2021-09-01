@@ -3,6 +3,7 @@
   <p align="center">A <b>beautiful</b> drag and drop editor for building out collections with React</p>
    <a href="https://optum.github.io/collection-builder">
     <img src="https://raw.githubusercontent.com/storybookjs/brand/master/badge/badge-storybook.svg" alt="storybook badge" />
+    <img src="https://img.shields.io/npm/v/@optum/collection-builder" alt="npm badge" />
   </a>
 
   ![demo](https://raw.githubusercontent.com/Optum/collection-builder/main/.github/demo-720.gif)

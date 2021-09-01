@@ -4,7 +4,7 @@
     "./dist"
   ],
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@optum"
+    "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",
