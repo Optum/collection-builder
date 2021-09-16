@@ -4,7 +4,7 @@
    <a href="https://optum.github.io/collection-builder">
     <img src="https://raw.githubusercontent.com/storybookjs/brand/master/badge/badge-storybook.svg" alt="storybook badge" />
   </a>
-  <a href="">
+  <a href="https://www.npmjs.com/package/@optum/collection-builder">
     <img src="https://img.shields.io/npm/v/@optum/collection-builder" alt="npm badge" />
   </a>
 
