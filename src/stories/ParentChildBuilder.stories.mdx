@@ -36,14 +36,14 @@ A beautiful drag and drop editor for building out collections with React
 
 ## Install
 
-`yarn add @otte/collection-builder`
+`yarn add @optum/collection-builder`
 
 ## Usage
 
-To set up using defaults, import `BuilderProvider` from `@otte/collection-builder`. Wrap your custom component with `BuilderProvider`.
+To set up using defaults, import `BuilderProvider` from `@optum/collection-builder`. Wrap your custom component with `BuilderProvider`.
 
 ```jsx
-import { BuilderProvider } from "@otte/collection-builder";
+import { BuilderProvider } from "@optum/collection-builder";
 import { YourComponent } from "./your-component";
 
 function App() {
@@ -57,10 +57,10 @@ function App() {
 export default App;
 ```
 
-Inside your custom component, import `BuilderEditor` and `useBuilderState` from `@otte/collection-builder`. You can then place the `BuilderEditor` inside your custom component and access its state with `useBuilderState`.
+Inside your custom component, import `BuilderEditor` and `useBuilderState` from `@optum/collection-builder`. You can then place the `BuilderEditor` inside your custom component and access its state with `useBuilderState`.
 
 ```jsx
-import { BuilderEditor, useBuilderState } from "@otte/collection-builder";
+import { BuilderEditor, useBuilderState } from "@optum/collection-builder";
 
 function YourComponent() {
   const { sections, childItems } = useBuilderState();
@@ -90,7 +90,7 @@ To set up with options, pass certain `options` into the `BuilderProvider` as pro
 | `icon`        | String                | `star`                     | Determine the icon used for each child item. Options are `star`, `file`, `check`, `heart`, `smiley`, `person`, `leaf`, and `lightbulb`.                                                        |
 
 ```jsx
-import { BuilderProvider } from "@otte/collection-builder";
+import { BuilderProvider } from "@optum/collection-builder";
 import { YourComponent } from "./your-component";
 
 function App() {
