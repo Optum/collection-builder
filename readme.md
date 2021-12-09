@@ -12,7 +12,15 @@
 </div>
 
 ### Installation
-[See installation steps here](https://github.com/Optum/collection-builder/packages/760670)
+To use the Collection Builder, install the `@optum/collection-builder` package:
+
+```bash
+yarn add @optum/collection-builder
+```
+or
+```bash
+npm i @optum/collection-builder
+```
 
 ### Usage
 Play with a demo and see documentation [on the Storybook](https://optum.github.io/collection-builder) page!
